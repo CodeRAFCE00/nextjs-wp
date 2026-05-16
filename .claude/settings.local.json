@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:blogs-poc.local)"
+      "WebFetch(domain:blogs-poc.local)",
+      "WebFetch(domain:github.com)",
+      "Bash(npm list *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\Admin\\\\Desktop\" | ForEach-Object { Write-Output \"$\\($_.Name\\) $\\(if \\($_.PSIsContainer\\) { '[DIR]' } else { '[FILE]' }\\)\" })",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\Admin\\\\Desktop\\\\PRISMSCALE_IT\" -Force | ForEach-Object { Write-Output \"$\\($_.Name\\) $\\(if \\($_.PSIsContainer\\) { '[DIR]' } else { '[FILE]' }\\)\" })",
+      "PowerShell(@\\(Get-ChildItem -Path \"C:\\\\Users\\\\Admin\\\\Desktop\\\\PRISMSCALE_IT\" -Directory\\).Count)"
     ]
   }
 }

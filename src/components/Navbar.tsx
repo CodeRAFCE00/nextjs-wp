@@ -67,6 +67,7 @@ export default function Navbar() {
           </Box>
 
           <IconButton
+            aria-label="Open menu"
             sx={{ display: { xs: "flex", sm: "none" }, color: "#94A3B8" }}
             onClick={() => setDrawerOpen(true)}
           >
@@ -82,7 +83,7 @@ export default function Navbar() {
         slotProps={{ paper: { sx: { width: 260, bgcolor: "#0F172A" } } }}
       >
         <Box sx={{ display: "flex", justifyContent: "flex-end", p: 1 }}>
-          <IconButton onClick={() => setDrawerOpen(false)} sx={{ color: "#94A3B8" }}>
+          <IconButton aria-label="Close menu" onClick={() => setDrawerOpen(false)} sx={{ color: "#94A3B8" }}>
             <CloseIcon />
           </IconButton>
         </Box>

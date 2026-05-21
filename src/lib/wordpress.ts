@@ -26,7 +26,7 @@ export interface WordPressResponse<T> {
 }
 
 const USER_AGENT = "Next.js WordPress Client";
-const CACHE_TTL = 3600;
+const CACHE_TTL = 300;
 
 async function wordpressFetch<T>(
   path: string,
